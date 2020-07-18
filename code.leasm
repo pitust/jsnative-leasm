@@ -1,0 +1,33 @@
+type number:
+    prop _int native:4
+    prop toString func:native_number_tostring
+type _Number:
+    prop _fromRaw func:native_fromraw
+    prop log func:fn_log
+    static
+type string:
+    prop _ptr native:8
+
+funcdecl native_number_tostring:
+    decl 0 string
+    impl native_number_tostring_impl
+
+funcdecl native_fromraw:
+    decl 1 cdouble number
+    impl native_fromraw_impl
+
+funcdecl fn_log:
+    decl 1 number void
+    impl log_impl
+
+funcdecl _start:
+    impl leasm
+global Number:
+    type _Number
+func _start:
+    assignnull r0 _Number
+    mov Number r0
+    get r3 Number.log
+    get r1 Number._fromRaw
+    call r2 r1 1234
+    call void r3 r2
