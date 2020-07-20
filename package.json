@@ -1,7 +1,7 @@
 {
   "name": "@jsnative/leasm",
   "version": "0.1.0",
-  "description": "",
+  "description": "An assembly-like language that is dynamicly typed AND compiles to (reasonable) efficent C++ NOTE: IN BETA",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,17 @@
     "@types/node": "^14.0.20",
     "json-stringify-deterministic": "^1.0.1",
     "sucrase": "^3.15.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pitust/jsnative-leasm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pitust/jsnative-leasm/issues"
+  },
+  "homepage": "https://github.com/pitust/jsnative-leasm#readme"
 }
