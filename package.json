@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^14.0.20",
-    "json-stringify-deterministic": "^1.0.1"
+    "json-stringify-deterministic": "^1.0.1",
+    "sucrase": "^3.15.0"
   }
 }
